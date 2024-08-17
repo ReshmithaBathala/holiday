@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoGaga - Travel</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723877202/GOgaga_ws2gwf.jpg"
+          alt="GoGaga Logo"
+          class="logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Membership
+              <img
+                src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723877403/diamond-logo-png-19_s2w8ah.jpg"
+                class="nav-link-images"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Gift Cards
+              <img
+                src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723877652/gift-card-icon_nilmvl.jpg"
+                class="nav-link-images"
+              />
+            </a>
+          </li>
+          <li class="nav-item nav-person-icon">
+            <a class="nav-link" href="#">
+              <img
+                src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723877958/threeLines_higgum.jpg"
+                class="nav-link-images"
+              />
+              <img
+                src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723878030/personLogo_axr7yk.png"
+                class="nav-link-images"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+          Unlock your path to adventure; start your journey of discovery - where
+          every destination awaits your exploration
+        </p>
+      </div>
+      <div class="booking-section container mt-4">
+        <div class="card p-4 shadow-sm">
+          <div class="row mb-3">
+            <div class="col-md-2">
+              <button class="btn btn-dark btn-block">Packages</button>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-outline-dark btn-block">Tours</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="destination" class="label">Destination</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="destination"
+                  placeholder="Enter the City"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group-dates">
+                <div class="date-wrapper">
+                  <label for="checkin" class="label">Check-in</label>
+                  <input
+                    type="date"
+                    class="form-control date-style"
+                    id="checkin"
+                  />
+                </div>
+                <div class="date-wrapper">
+                  <label for="checkout" class="label">Check-out</label>
+                  <input
+                    type="date"
+                    class="form-control date-style"
+                    id="checkout"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group guests-group">
+                <label for="guests" class="label">Guests and Rooms</label>
+                <select class="form-control" id="guests">
+                  <option>2 adults, 0 children, 1 room</option>
+                  <option>1 adult, 0 children, 1 room</option>
+                  <option>2 adults, 1 child, 1 room</option>
+                </select>
+              </div>
+            </div>
+            <div class="col text-right">
+              <button type="submit" class="btn">
+                <img
+                  src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723880647/searchIcon_cax9hp.jpg"
+                  class="search-icon"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-2">
+              <label for="star-rating" class="star-label">Star Rating</label>
+              <div id="rating" class="d-flex">
+                <button class="btn btn-outline-dark mr-1 star-btn">
+                  3
+                  <img
+                    src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723881434/star_PNG41488.png_alxg0b.png"
+                    class="star"
+                  />
+                </button>
+                <button class="btn btn-outline-dark mr-1 star-btn">
+                  <img
+                    src="https://res.cloudinary.com/dt9mfzwqh/image/upload/v1723881434/star_PNG41488.png_alxg0b.png"
+                    class="star"
+                  />
+                </button>
+                <button class="btn btn-outline-dark">5</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
